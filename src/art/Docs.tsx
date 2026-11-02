@@ -12,7 +12,7 @@ export const rationale = {
       "Colour carries the idea. Midnight Indigo and Electric Iris are neighbouring violets, Soft Lavender is the tone where they meet, and Living Coral appears once per page as the single warm point of focus.",
       "On the cover, two planes cross. Above the crossing they overlap in lavender; below it they part and leave an ivory gap, so “in between” reads as both overlap and separation. The letters of IN BETWEEN change colour exactly where the plane beneath them changes, so the title is cut by the boundary it names.",
       "The STEM divider extends the idea. Four circles carry S, T, E and M, and each intersection is filled with a new colour, so the letters are visibly shared between neighbouring fields.",
-      "On research pages the accents stay small: overlapping-circle heading markers, a dual-tone rule under the title, outlined figure capsules, a connecting line in the margin and a thin gradient strip on the outer edge. Body text remains dark indigo on ivory at 13.8:1 contrast.",
+      "On research pages the accents stay small: overlapping-circle heading markers, a dual-tone rule under the title, outlined figure capsules, a connecting line in the margin and a thin gradient strip on the outer edge. Body text remains dark indigo on ivory at 13.9:1 contrast.",
     ],
   },
   fragments: {
@@ -43,15 +43,16 @@ export function SpecPage({ theme }: { theme: Theme }) {
         <span>LPCJH Theme Research — Palette and Typography</span>
         <span>Theme study {fr ? "B" : "A"}</span>
       </div>
-      <h1 style={{ fontSize: 84, marginTop: 22, color: fr ? "#191919" : "#25235C" }}>{r.name}</h1>
+      <h1 style={{ fontSize: 84, marginTop: 22, color: fr ? "#171716" : "#28255F" }}>{r.name}</h1>
       <p style={{ marginTop: 14, fontStyle: "italic", fontSize: 17, lineHeight: "24px", maxWidth: 560 }}>{r.line}</p>
 
       <div className="sw-row">
         {sw.map((s) => (
-          <div key={s.hex} className="sw" style={{ background: s.hex, color: s.on, flex: s.share, border: s.hex.toLowerCase() === (fr ? "#f5f0e5" : "#f3ede3") ? "1px solid rgba(0,0,0,.25)" : undefined }}>
+          <div key={s.hex} className="sw" style={{ background: s.hex, color: s.on, flex: s.share, border: s.hex.toLowerCase() === (fr ? "#F7EDDD" : "#F2EDE8") ? "1px solid rgba(0,0,0,.25)" : undefined }}>
             <b>{s.name}</b>
             <span>{s.hex}</span>
             <span>RGB {rgb(s.hex)}</span>
+            <span>palette-0 {s.step}</span>
             <span>~{s.share}%</span>
           </div>
         ))}
@@ -104,20 +105,20 @@ export function SpecPage({ theme }: { theme: Theme }) {
 export function RationalePage({ page }: { page: 1 | 2 }) {
   const items = page === 1 ? (["in-between"] as const) : (["fragments"] as const);
   return (
-    <div className="doc doc-ib" style={{ background: "#fbf8f2" }}>
+    <div className="doc doc-ib" style={{ background: "#F2EDE8" }}>
       <div className="meta" style={{ display: "flex", justifyContent: "space-between", marginBottom: 20 }}>
         <span>LPCJH — Theme Research — Design Rationale</span>
         <span>{page} / 2</span>
       </div>
       {items.map((t) => (
         <div key={t}>
-          <h1 style={{ fontSize: 60, color: t === "fragments" ? "#191919" : "#25235C" }}>{rationale[t].name}</h1>
+          <h1 style={{ fontSize: 60, color: t === "fragments" ? "#171716" : "#28255F" }}>{rationale[t].name}</h1>
           <p style={{ margin: "12px 0 22px", fontStyle: "italic", fontSize: 16 }}>{rationale[t].line}</p>
           {rationale[t].body.map((b, i) => <p key={i} style={{ maxWidth: 640 }}>{b}</p>)}
         </div>
       ))}
       {page === 2 && (
-        <div style={{ marginTop: 30, paddingTop: 16, borderTop: "2px solid #191919" }}>
+        <div style={{ marginTop: 30, paddingTop: 16, borderTop: "2px solid #171716" }}>
           <h2>Shared institutional decisions</h2>
           {shared.map((b, i) => <p key={i} style={{ maxWidth: 640 }}>{b}</p>)}
         </div>

@@ -1,4 +1,4 @@
-.slides { background: #fff; }
+.slides { background: #F5F7EC; }
 .slide { position: relative; width: 1280px; height: 720px; overflow: hidden; box-sizing: border-box; page-break-after: always; break-after: page; padding: 48px 64px; font-family: var(--f-display); }
 .slide * { box-sizing: border-box; }
 .slide h1 { margin: 0; font-weight: 700; letter-spacing: -0.035em; line-height: 0.95; }
@@ -8,12 +8,12 @@
 .slide ul { margin: 0; padding-left: 18px; }
 .slide .m { font-family: var(--f-meta); font-size: 12px; letter-spacing: 0.06em; }
 .slide .foot { position: absolute; left: 64px; right: 64px; bottom: 28px; display: flex; justify-content: space-between; }
-.pg { position: relative; overflow: hidden; outline: 1px solid rgba(0,0,0,.28); flex: none; background: #fff; }
+.pg { position: relative; overflow: hidden; outline: 1px solid rgba(0,0,0,.28); flex: none; background: #F5F7EC; }
 .pg > div { position: absolute; left: 0; top: 0; width: 816px; height: 1056px; transform-origin: 0 0; }
-.s-ib { background: #25235c; color: #f3ede3; }
-.s-ib .pg { outline-color: rgba(243,237,227,.5); }
-.s-fr { background: #f5f0e5; color: #191919; }
-.s-neutral { background: #faf8f3; color: #1c1b22; }
+.s-ib { background: #28255F; color: #F2EDE8; }
+.s-ib .pg { outline-color: rgba(242,237,232,.5); }
+.s-fr { background: #F7EDDD; color: #171716; }
+.s-neutral { background: #F5F7EC; color: #121211; }
 .callouts { display: grid; gap: 14px; }
 .callouts div { border-top: 1px solid currentColor; padding-top: 8px; }
 .callouts b { display: block; font-size: 15px; font-weight: 600; margin-bottom: 2px; }

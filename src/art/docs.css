@@ -10,8 +10,8 @@
 .doc td { padding: 6px 8px 6px 0; border-bottom: 1px solid color-mix(in srgb, currentColor 22%, transparent); vertical-align: top; }
 .doc td:first-child { white-space: nowrap; }
 .doc td.m { font-family: var(--f-meta); font-size: 11px; }
-.doc-ib { background: #f3ede3; color: #1d1c47; }
-.doc-fr { background: #f5f0e5; color: #191919; }
+.doc-ib { background: #F2EDE8; color: #1C1D3F; }
+.doc-fr { background: #F7EDDD; color: #171716; }
 .sw-row { display: flex; height: 200px; margin-top: 14px; }
 .sw-row .sw { padding: 12px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 12px; line-height: 1.3; }
 .sw-row .sw b { font-family: var(--f-display); font-size: 14px; font-weight: 600; }

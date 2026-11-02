@@ -7,7 +7,7 @@ Next.js 16 + TypeScript + Tailwind 4. All artwork is SVG and HTML, authored once
 - `src/art/` - the six Letter pages (816 x 1056 css px), spec sheets, rationale and the 10-slide deck. Each is a React component.
 - `src/app/export/[slug]` - bare, print-sized routes used by the export script.
 - `scripts/export.mjs` - renders PNG (2550 x 3300, 300 dpi) and vector PDF with Playwright into `exports/` and `public/downloads/`.
-- `docs/` - visual audit of the Spring 2026 issue and design references.
+- `docs/` - palette (palette-0 mapping), visual audit of the Spring 2026 issue and design references.
 
 ## Run
 ```bash

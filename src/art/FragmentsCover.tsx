@@ -40,7 +40,7 @@ export function FragmentsCover() {
 
       {/* numbered fragments */}
       <g fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>
-        <text x={gx(0) + 8} y={gy(2) + 20} fill="#fff">01</text>
+        <text x={gx(0) + 8} y={gy(2) + 20} fill="#F7EDDD">01</text>
         <text x={gx(8) + 8} y={gy(3) + 20} fill={F.ink}>02</text>
         <text x={gx(0) + 8} y={gy(7) - 10} fill={F.ink}>03</text>
         <text x={gx(4) + 8} y={gy(8) + 50} fill={F.paper}>04</text>

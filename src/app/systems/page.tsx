@@ -79,7 +79,7 @@ export default function Systems() {
 
           <section className="cmp-row" aria-labelledby="c-acc">
             <h2 id="c-acc">Visual accessibility</h2>
-            <div className="cmp-cell cmp-ib"><Contrast k="in-between" /><p>Body text is 13.8:1 on ivory.</p></div>
+            <div className="cmp-cell cmp-ib"><Contrast k="in-between" /><p>Body text is 13.9:1 on ivory.</p></div>
             <div className="cmp-cell cmp-fr"><Contrast k="fragments" /><p>Body text is 15.5:1 on paper.</p></div>
           </section>
 

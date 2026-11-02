@@ -1,6 +1,6 @@
 import { W, H } from "./regions";
 
-const C = { indigo: "#25235C", iris: "#4948ED", lavender: "#A29CF4", coral: "#FF755B", ivory: "#F3EDE3" };
+const C = { indigo: "#28255F", iris: "#5751C7", lavender: "#8E9DFD", coral: "#ED7962", ivory: "#F2EDE8" };
 
 const R = 150;
 const CY = 400;

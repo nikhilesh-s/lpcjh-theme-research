@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export const F = { ink: "#191919", citrine: "#F2D84A", vermilion: "#E44F3F", cobalt: "#3873D9", paper: "#F5F0E5" };
+export const F = { ink: "#171716", citrine: "#DCBF4A", vermilion: "#E15C49", cobalt: "#305EB1", paper: "#F7EDDD" };
 export const GX = 48; // grid origin and unit: 12 cols x 16 rows of 60px inside a 48px margin
 export const U = 60;
 export const gx = (c: number) => GX + c * U;

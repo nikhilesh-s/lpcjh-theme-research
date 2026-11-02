@@ -2,17 +2,17 @@
 
 :root {
   /* In Between */
-  --ib-indigo: #25235c;
-  --ib-iris: #4948ed;
-  --ib-lavender: #a29cf4;
-  --ib-coral: #ff755b;
-  --ib-ivory: #f3ede3;
+  --ib-indigo: var(--p0-indigo-850);
+  --ib-iris: var(--p0-indigo-600);
+  --ib-lavender: var(--p0-indigo-300);
+  --ib-coral: var(--p0-vermillion-300);
+  --ib-ivory: var(--p0-purple-25);
   /* Fragments */
-  --fr-ink: #191919;
-  --fr-citrine: #f2d84a;
-  --fr-vermilion: #e44f3f;
-  --fr-cobalt: #3873d9;
-  --fr-paper: #f5f0e5;
+  --fr-ink: var(--p0-base-975);
+  --fr-citrine: var(--p0-yellow-300);
+  --fr-vermilion: var(--p0-vermillion-400);
+  --fr-cobalt: var(--p0-blue-600);
+  --fr-paper: var(--p0-orange-25);
 
   --f-display: var(--font-grotesk), "Helvetica Neue", Arial, sans-serif;
   --f-text: var(--font-serif), Georgia, serif;

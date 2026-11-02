@@ -1,21 +1,22 @@
-export type Swatch = { name: string; hex: string; role: string; share: number; on: string };
+export type Swatch = { name: string; hex: string; role: string; share: number; on: string; step: string };
 
 export const IB: Swatch[] = [
-  { name: "Midnight Indigo", hex: "#25235C", role: "Structural foundation", share: 35, on: "#F3EDE3" },
-  { name: "Electric Iris", hex: "#4948ED", role: "Primary expressive colour", share: 25, on: "#F3EDE3" },
-  { name: "Soft Lavender", hex: "#A29CF4", role: "Transition and visual bridge", share: 15, on: "#25235C" },
-  { name: "Living Coral", hex: "#FF755B", role: "Warm focal counterpoint", share: 10, on: "#25235C" },
-  { name: "Warm Ivory", hex: "#F3EDE3", role: "Neutral editorial space", share: 15, on: "#25235C" },
+  { name: "Midnight Indigo", hex: "#28255F", role: "Structural foundation", share: 35, on: "#F2EDE8", step: "indigo 850" },
+  { name: "Electric Iris", hex: "#5751C7", role: "Primary expressive colour", share: 25, on: "#F2EDE8", step: "indigo 600" },
+  { name: "Soft Lavender", hex: "#8E9DFD", role: "Transition and visual bridge", share: 15, on: "#28255F", step: "indigo 300" },
+  { name: "Living Coral", hex: "#ED7962", role: "Warm focal counterpoint", share: 10, on: "#28255F", step: "vermillion 300" },
+  { name: "Warm Ivory", hex: "#F2EDE8", role: "Neutral editorial space", share: 15, on: "#28255F", step: "purple 25" },
 ];
 
 export const FR: Swatch[] = [
-  { name: "Editorial Ink", hex: "#191919", role: "Structural typography", share: 30, on: "#F5F0E5" },
-  { name: "Citrine Yellow", hex: "#F2D84A", role: "Discovery and attention", share: 17, on: "#191919" },
-  { name: "Vermilion", hex: "#E44F3F", role: "Energy and interruption", share: 10, on: "#191919" },
-  { name: "Cobalt Blue", hex: "#3873D9", role: "Cool counterweight", share: 13, on: "#FFFFFF" },
-  { name: "Warm Paper", hex: "#F5F0E5", role: "Neutral editorial foundation", share: 30, on: "#191919" },
+  { name: "Editorial Ink", hex: "#171716", role: "Structural typography", share: 30, on: "#F7EDDD", step: "base 975" },
+  { name: "Citrine Yellow", hex: "#DCBF4A", role: "Discovery and attention", share: 17, on: "#171716", step: "yellow 300" },
+  { name: "Vermilion", hex: "#E15C49", role: "Energy and interruption", share: 10, on: "#171716", step: "vermillion 400" },
+  { name: "Cobalt Blue", hex: "#305EB1", role: "Cool counterweight", share: 13, on: "#F7EDDD", step: "blue 600" },
+  { name: "Warm Paper", hex: "#F7EDDD", role: "Neutral editorial foundation", share: 30, on: "#171716", step: "orange 25" },
 ];
 
+// Every hex above is a palette-0 step (https://palette.elligene.com); `step` names it.
 export const rgb = (h: string) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)).join(", ");
 
 // WCAG 2.x contrast, computed from the hex values above.
@@ -30,18 +31,18 @@ export const contrast = (a: string, b: string) => {
 
 export const pairs = {
   "in-between": [
-    ["Ivory on Indigo", "#F3EDE3", "#25235C", "All text sizes"],
-    ["Ivory on Iris", "#F3EDE3", "#4948ED", "All text sizes"],
-    ["Indigo on Lavender", "#25235C", "#A29CF4", "All text sizes"],
-    ["Indigo on Coral", "#25235C", "#FF755B", "All text sizes"],
-    ["Ivory on Lavender", "#F3EDE3", "#A29CF4", "Avoid: decorative only"],
+    ["Ivory on Indigo", "#F2EDE8", "#28255F", "All text sizes"],
+    ["Ivory on Iris", "#F2EDE8", "#5751C7", "All text sizes"],
+    ["Indigo on Lavender", "#28255F", "#8E9DFD", "All text sizes"],
+    ["Indigo on Coral", "#28255F", "#ED7962", "All text sizes"],
+    ["Ivory on Lavender", "#F2EDE8", "#8E9DFD", "Avoid: decorative only"],
   ],
   fragments: [
-    ["Paper on Ink", "#F5F0E5", "#191919", "All text sizes"],
-    ["Ink on Citrine", "#191919", "#F2D84A", "All text sizes"],
-    ["Ink on Vermilion", "#191919", "#E44F3F", "All text sizes"],
-    ["White on Cobalt", "#FFFFFF", "#3873D9", "All text sizes"],
-    ["Paper on Cobalt", "#F5F0E5", "#3873D9", "Large display type only"],
+    ["Paper on Ink", "#F7EDDD", "#171716", "All text sizes"],
+    ["Ink on Citrine", "#171716", "#DCBF4A", "All text sizes"],
+    ["Ink on Vermilion", "#171716", "#E15C49", "All text sizes"],
+    ["Paper on Cobalt", "#F7EDDD", "#305EB1", "All text sizes"],
+    ["Paper on Vermilion", "#F7EDDD", "#E15C49", "Large display type only"],
   ],
 } as const;
 

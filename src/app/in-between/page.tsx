@@ -44,7 +44,7 @@ export default function InBetween() {
           <h2 id="h-col">Colour is transition</h2>
           <p className="sec-lede">Hover or focus a swatch. Cool analogous violets carry the structure; coral is the one warm point, used once per page.</p>
           <PaletteStrip swatches={IB} label="In Between palette" />
-          <p className="note">Ivory on lavender measures 2.1:1, so that pairing is decorative only. Indigo on lavender is 5.8:1 and indigo on coral 5.4:1.</p>
+          <p className="note">Ivory on lavender measures 2.2:1, so that pairing is decorative only. Indigo on lavender is 5.5:1 and indigo on coral 4.9:1.</p>
         </section>
 
         <section id="type" className="ib-sec ib-dark" aria-labelledby="h-type">

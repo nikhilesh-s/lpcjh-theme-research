@@ -72,17 +72,17 @@ function Blocks({ items, fr, sups = {} }: { items: readonly Block[]; fr: boolean
 function PlateIB() {
   return (
     <svg className="plate" viewBox="0 0 344 188" role="img" aria-label="Placeholder figure: two overlapping circles on an axis">
-      <rect x="0.5" y="0.5" width="343" height="187" fill="#fbf8f2" stroke="#25235c" strokeOpacity="0.35" />
-      <g stroke="#25235c" strokeOpacity="0.28">
+      <rect x="0.5" y="0.5" width="343" height="187" fill="#F2EDE8" stroke="#28255F" strokeOpacity="0.35" />
+      <g stroke="#28255F" strokeOpacity="0.28">
         {[40, 80, 120, 160].map((y) => <line key={y} x1="0" x2="344" y1={y} y2={y} />)}
       </g>
-      <circle cx="140" cy="94" r="62" fill="#4948ed" fillOpacity="0.88" />
-      <circle cx="204" cy="94" r="62" fill="#a29cf4" fillOpacity="0.88" />
-      <path d="M172 40.6 A62 62 0 0 1 172 147.4 A62 62 0 0 1 172 40.6Z" fill="#ff755b" />
-      <line x1="24" y1="160" x2="320" y2="160" stroke="#25235c" />
-      <g fontFamily="var(--f-meta)" fontSize="9.5" fill="#25235c">
+      <circle cx="140" cy="94" r="62" fill="#5751C7" fillOpacity="0.88" />
+      <circle cx="204" cy="94" r="62" fill="#8E9DFD" fillOpacity="0.88" />
+      <path d="M172 40.6 A62 62 0 0 1 172 147.4 A62 62 0 0 1 172 40.6Z" fill="#ED7962" />
+      <line x1="24" y1="160" x2="320" y2="160" stroke="#28255F" />
+      <g fontFamily="var(--f-meta)" fontSize="9.5" fill="#28255F">
         <text x="24" y="176">Set A</text><text x="320" y="176" textAnchor="end">Set B</text>
-        <text x="172" y="98" textAnchor="middle" fill="#25235c">overlap</text>
+        <text x="172" y="98" textAnchor="middle" fill="#28255F">overlap</text>
       </g>
     </svg>
   );
@@ -91,20 +91,20 @@ function PlateIB() {
 function PlateFR() {
   return (
     <svg className="plate" viewBox="0 0 344 188" role="img" aria-label="Placeholder figure: modular panels on a grid">
-      <rect x="0.5" y="0.5" width="343" height="187" fill="#f5f0e5" stroke="#191919" />
+      <rect x="0.5" y="0.5" width="343" height="187" fill="#F7EDDD" stroke="#171716" />
       <g>
-        <rect x="12" y="12" width="164" height="96" fill="#3873d9" />
-        <rect x="182" y="12" width="76" height="46" fill="#f2d84a" />
-        <rect x="264" y="12" width="68" height="46" fill="#191919" />
-        <path d="M182 108 A38 38 0 0 1 258 108Z" fill="#e44f3f" />
-        <rect x="264" y="64" width="68" height="44" fill="none" stroke="#191919" />
-        <rect x="12" y="114" width="76" height="62" fill="#191919" />
-        <rect x="94" y="114" width="82" height="62" fill="#f2d84a" />
-        <rect x="182" y="114" width="150" height="62" fill="none" stroke="#191919" />
+        <rect x="12" y="12" width="164" height="96" fill="#305EB1" />
+        <rect x="182" y="12" width="76" height="46" fill="#DCBF4A" />
+        <rect x="264" y="12" width="68" height="46" fill="#171716" />
+        <path d="M182 108 A38 38 0 0 1 258 108Z" fill="#E15C49" />
+        <rect x="264" y="64" width="68" height="44" fill="none" stroke="#171716" />
+        <rect x="12" y="114" width="76" height="62" fill="#171716" />
+        <rect x="94" y="114" width="82" height="62" fill="#DCBF4A" />
+        <rect x="182" y="114" width="150" height="62" fill="none" stroke="#171716" />
       </g>
       <g fontFamily="var(--f-meta)" fontSize="9.5">
-        <text x="18" y="28" fill="#f5f0e5">01</text><text x="188" y="28" fill="#191919">02</text>
-        <text x="270" y="28" fill="#f5f0e5">03</text><text x="18" y="130" fill="#f5f0e5">04</text>
+        <text x="18" y="28" fill="#F7EDDD">01</text><text x="188" y="28" fill="#171716">02</text>
+        <text x="270" y="28" fill="#F7EDDD">03</text><text x="18" y="130" fill="#F7EDDD">04</text>
       </g>
     </svg>
   );
@@ -115,15 +115,15 @@ function DecoIB() {
     <svg className="rp-deco" viewBox="0 0 816 1056" aria-hidden="true">
       <defs>
         <linearGradient id="rp-ib-edge" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#25235c" /><stop offset="0.55" stopColor="#4948ed" /><stop offset="1" stopColor="#a29cf4" />
+          <stop offset="0" stopColor="#28255F" /><stop offset="0.55" stopColor="#5751C7" /><stop offset="1" stopColor="#8E9DFD" />
         </linearGradient>
       </defs>
       <rect x="808" y="0" width="8" height="1056" fill="url(#rp-ib-edge)" />
-      <line x1="40" y1="78" x2="40" y2="990" stroke="#25235c" strokeOpacity="0.28" />
+      <line x1="40" y1="78" x2="40" y2="990" stroke="#28255F" strokeOpacity="0.28" />
       {[294, 426, 703].map((y) => (
-        <g key={y}><circle cx="40" cy={y} r="3.5" fill="#f3ede3" stroke="#4948ed" /><line x1="44" x2="62" y1={y} y2={y} stroke="#4948ed" strokeOpacity="0.6" /></g>
+        <g key={y}><circle cx="40" cy={y} r="3.5" fill="#F2EDE8" stroke="#5751C7" /><line x1="44" x2="62" y1={y} y2={y} stroke="#5751C7" strokeOpacity="0.6" /></g>
       ))}
-      <g fill="none" stroke="#a29cf4" strokeOpacity="0.55">
+      <g fill="none" stroke="#8E9DFD" strokeOpacity="0.55">
         {[26, 46].map((r) => <circle key={r} cx="0" cy="0" r={r} />)}
       </g>
     </svg>
@@ -138,19 +138,19 @@ function DecoFR() {
   ];
   return (
     <svg className="rp-deco" viewBox="0 0 816 1056" aria-hidden="true">
-      <g stroke="#191919" strokeWidth="1">
+      <g stroke="#171716" strokeWidth="1">
         {corners.map(([x, y, sx, sy], i) => (
           <g key={i}><line x1={x} y1={y} x2={x + sx * L} y2={y} /><line x1={x} y1={y} x2={x} y2={y + sy * L} /></g>
         ))}
       </g>
       <g>
-        <rect x="64" y="12" width="8" height="8" fill="#f2d84a" /><rect x="74" y="12" width="8" height="8" fill="#3873d9" /><rect x="84" y="12" width="8" height="8" fill="#e44f3f" />
+        <rect x="64" y="12" width="8" height="8" fill="#DCBF4A" /><rect x="74" y="12" width="8" height="8" fill="#305EB1" /><rect x="84" y="12" width="8" height="8" fill="#E15C49" />
       </g>
-      <g fontFamily="var(--f-meta)" fontSize="9" fill="#191919" opacity="0.7">
+      <g fontFamily="var(--f-meta)" fontSize="9" fill="#171716" opacity="0.7">
         {[1, 2, 3, 4, 5, 6].map((n) => <text key={n} x="30" y={80 + n * 140} transform={`rotate(-90 30 ${80 + n * 140})`}>{String(n).padStart(2, "0")}</text>)}
       </g>
-      <rect x="772" y="78" width="20" height="6" fill="#e44f3f" />
-      <rect x="772" y="86" width="20" height="2" fill="#191919" />
+      <rect x="772" y="78" width="20" height="6" fill="#E15C49" />
+      <rect x="772" y="86" width="20" height="2" fill="#171716" />
     </svg>
   );
 }

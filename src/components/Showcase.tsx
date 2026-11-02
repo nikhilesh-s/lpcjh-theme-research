@@ -31,7 +31,7 @@ export function AccentsIB() {
       <li><span className="acc-demo"><span className="ib-mark" /><b>Section heading</b></span><span>Heading marker: an outlined and a coral circle that overlap.</span></li>
       <li><span className="acc-demo"><span className="ib-rule" /></span><span>Dual-tone rule: indigo over a fine iris line, under the article title.</span></li>
       <li><span className="acc-demo"><span className="ib-cap">FIG. 1</span></span><span>Figure-number capsule, outlined in iris.</span></li>
-      <li><span className="acc-demo"><svg width="120" height="20" viewBox="0 0 120 20" aria-hidden="true"><line x1="6" y1="10" x2="120" y2="10" stroke="#4948ED" strokeOpacity=".6" /><circle cx="6" cy="10" r="4" fill="#F3EDE3" stroke="#4948ED" /></svg></span><span>Connecting line from the margin rail to each section.</span></li>
+      <li><span className="acc-demo"><svg width="120" height="20" viewBox="0 0 120 20" aria-hidden="true"><line x1="6" y1="10" x2="120" y2="10" stroke="#5751C7" strokeOpacity=".6" /><circle cx="6" cy="10" r="4" fill="#F2EDE8" stroke="#5751C7" /></svg></span><span>Connecting line from the margin rail to each section.</span></li>
       <li><span className="acc-demo"><span className="ib-edge" /></span><span>Gradient edge, indigo to lavender, 8 px on the outer margin. The only gradient on the page.</span></li>
     </ul>
   );
@@ -43,9 +43,9 @@ export function AccentsFR() {
       <li><span className="acc-demo"><span className="fr-tag"><i>03</i><b>Arts &amp; Humanities</b></span></span><span>Numbered section tag: ink number, citrine label.</span></li>
       <li><span className="acc-demo"><span className="fr-hm">1</span><b>Introduction</b></span><span>Square heading marker in cobalt, numbered to the section.</span></li>
       <li><span className="acc-demo"><span className="fr-fig"><i>FIG 1</i><s /></span></span><span>Modular figure label with a citrine chip.</span></li>
-      <li><span className="acc-demo"><svg width="64" height="40" viewBox="0 0 64 40" aria-hidden="true"><path d="M2 14V2H14M50 2H62V14M62 26V38H50M14 38H2V26" fill="none" stroke="#191919" /></svg></span><span>Crop marks at the corners, outside the live area.</span></li>
+      <li><span className="acc-demo"><svg width="64" height="40" viewBox="0 0 64 40" aria-hidden="true"><path d="M2 14V2H14M50 2H62V14M62 26V38H50M14 38H2V26" fill="none" stroke="#171716" /></svg></span><span>Crop marks at the corners, outside the live area.</span></li>
       <li><span className="acc-demo"><span className="fr-folio">79</span></span><span>Offset folio: citrine block over a hard ink shadow.</span></li>
-      <li><span className="acc-demo"><svg width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><rect width="16" height="16" fill="#F2D84A" /><rect x="20" width="16" height="16" fill="#3873D9" /><rect x="40" width="16" height="16" fill="#E44F3F" /></svg></span><span>Colour strip in the top margin, a print-style control bar.</span></li>
+      <li><span className="acc-demo"><svg width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><rect width="16" height="16" fill="#DCBF4A" /><rect x="20" width="16" height="16" fill="#305EB1" /><rect x="40" width="16" height="16" fill="#E15C49" /></svg></span><span>Colour strip in the top margin, a print-style control bar.</span></li>
     </ul>
   );
 }

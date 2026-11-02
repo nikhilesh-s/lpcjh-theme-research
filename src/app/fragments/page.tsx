@@ -44,7 +44,7 @@ export default function Fragments() {
           <h2 id="h-col"><i>02</i>Colour separates and assembles</h2>
           <p className="sec-lede">Hover or focus a block. Saturated accents sit behind hard boundaries; there are no gradients.</p>
           <PaletteStrip swatches={FR} label="Fragments palette" />
-          <p className="note">White takes over from paper for small text on cobalt (4.5:1 against 4.0:1). Ink on vermilion is 4.6:1.</p>
+          <p className="note">Paper on cobalt is 5.4:1 and ink on vermilion 5.0:1, so both work at text size. Paper on vermilion is 3.1:1, so it is for display type only.</p>
         </section>
 
         <section id="type" className="fr-sec" aria-labelledby="h-type">

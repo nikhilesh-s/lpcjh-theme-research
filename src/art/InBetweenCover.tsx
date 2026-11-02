@@ -1,11 +1,11 @@
 import { Masked, RegionFills, W, H, type Region } from "./regions";
 
 const C = {
-  indigo: "#25235C",
-  iris: "#4948ED",
-  lavender: "#A29CF4",
-  coral: "#FF755B",
-  ivory: "#F3EDE3",
+  indigo: "#28255F",
+  iris: "#5751C7",
+  lavender: "#8E9DFD",
+  coral: "#ED7962",
+  ivory: "#F2EDE8",
 };
 
 // Two planes cross at the nexus. Above it they overlap (convergence);
@@ -34,7 +34,7 @@ export function InBetweenCover() {
         {/* The one gradient: the overlap lightens as it narrows toward the nexus */}
         <linearGradient id="ib-lens" x1="0" y1="0" x2="0" y2={NY} gradientUnits="userSpaceOnUse">
           <stop offset="0" stopColor={C.lavender} />
-          <stop offset="1" stopColor="#CBC7F8" />
+          <stop offset="1" stopColor="#ACB9FC" />
         </linearGradient>
       </defs>
       <rect width={W} height={H} fill={C.ivory} />

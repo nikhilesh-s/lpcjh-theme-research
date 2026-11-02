@@ -89,7 +89,7 @@ export function Deck() {
             <p>Cool analogous violets carry the structure, with one warm coral counterpoint. Lavender sits between indigo and iris as a bridge tone. Colour describes transition: overlaps, gradual steps, translucent planes.</p>
           </div>
           <div style={{ paddingTop: 4 }}>
-            <Palette sw={IB} ink="#f3ede3" edge="rgba(243,237,227,.6)" />
+            <Palette sw={IB} ink="#F2EDE8" edge="rgba(242,237,232,.6)" />
           </div>
         </div>
         <Foot n={3} label="In Between" />
@@ -140,7 +140,7 @@ export function Deck() {
             <p>Saturated primaries separated by hard edges. Citrine for discovery, Vermilion for interruption, Cobalt for a cool counterweight. Ink and Paper hold the page. No gradients.</p>
           </div>
           <div style={{ paddingTop: 4 }}>
-            <Palette sw={FR} ink="#191919" />
+            <Palette sw={FR} ink="#171716" />
           </div>
         </div>
         <Foot n={6} label="Fragments" />
@@ -154,7 +154,7 @@ export function Deck() {
           <h1 style={{ fontSize: 52 }}>One word, cut into strips and put back one column off.</h1>
           <div className="callouts" style={{ marginTop: 32, gridTemplateColumns: "1fr 1fr", gap: 22 }}>
             <div><b>12 × 16 grid</b><span>Every block and every displacement lands on a 60 px module, or half of one.</span></div>
-            <div><b>Colour blocks flip ink</b><span>Letters turn paper, ink or white as they cross cobalt, citrine, vermilion and ink fields.</span></div>
+            <div><b>Colour blocks flip ink</b><span>Letters turn paper or ink as they cross cobalt, citrine, vermilion and ink fields.</span></div>
             <div><b>Numbered fragments</b><span>01 to 04 label the blocks; the panel at lower right shows the parts assembled.</span></div>
             <div><b>Masthead</b><span>Same light serif lockup, set paper-on-ink at the base.</span></div>
           </div>
@@ -204,7 +204,7 @@ export function Deck() {
           <thead><tr><th></th><th>In Between</th><th>Fragments</th></tr></thead>
           <tbody>
             <tr><td>Editorial flexibility</td><td>Dividers for the other sections reuse the circle-and-intersection method with different letter sets. Tone stays calm, which suits longer reading.</td><td>Any word breaks into strips or blocks. Higher energy; a long title needs more care to stay legible.</td></tr>
-            <tr><td>Visual accessibility</td><td>Body text 13.8:1 on ivory. Ivory on lavender is 2.1:1, so that pairing is decorative only; indigo on lavender is 5.8:1.</td><td>Body 15.5:1 on paper. Cobalt takes white (4.5:1) for small labels; paper on cobalt (4.0:1) is for display type only.</td></tr>
+            <tr><td>Visual accessibility</td><td>Body text 13.9:1 on ivory. Ivory on lavender is 2.2:1, so that pairing is decorative only; indigo on lavender is 5.5:1.</td><td>Body 15.5:1 on paper. Paper on cobalt is 5.4:1 and ink on vermilion 5.0:1; paper on vermilion (3.1:1) is for display type only.</td></tr>
             <tr><td>Production</td><td>All vector. One gradient and a few transparencies; both export cleanly to PDF.</td><td>All vector, flat fills only. The grid is easy to rebuild in InDesign or Affinity.</td></tr>
             <tr><td>Type</td><td colSpan={2}>Shared: Space Grotesk, Source Serif 4, IBM Plex Mono (all open licence). The Spring 2026 issue sets body text in Atkinson Hyperlegible Next; swapping it back is a one-token change if readability policy requires it.</td></tr>
           </tbody>

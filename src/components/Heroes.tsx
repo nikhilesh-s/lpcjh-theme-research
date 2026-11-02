@@ -1,4 +1,4 @@
-const C = { indigo: "#25235C", iris: "#4948ED", lavender: "#A29CF4", coral: "#FF755B", ivory: "#F3EDE3", ink: "#191919", citrine: "#F2D84A", vermilion: "#E44F3F", cobalt: "#3873D9", paper: "#F5F0E5" };
+const C = { indigo: "#28255F", iris: "#5751C7", lavender: "#8E9DFD", coral: "#ED7962", ivory: "#F2EDE8", ink: "#171716", citrine: "#DCBF4A", vermilion: "#E15C49", cobalt: "#305EB1", paper: "#F7EDDD" };
 
 export function HeroIB({ className = "" }: { className?: string }) {
   const NX = 302, NY = 517;
