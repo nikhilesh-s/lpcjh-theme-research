@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import "./site.css";
 
 const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"], display: "swap" });
 const serif = Source_Serif_4({
@@ -26,7 +27,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${grotesk.variable} ${serif.variable} ${mono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <a href="#main" className="skip">Skip to content</a>
+        {children}
+      </body>
     </html>
   );
 }

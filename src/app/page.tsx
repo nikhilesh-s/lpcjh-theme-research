@@ -1,69 +1,79 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Nav } from "@/components/Nav";
+import { HeroFR, HeroIB } from "@/components/Heroes";
+import { PagePreview } from "@/components/PagePreview";
+import { InBetweenCover } from "@/art/InBetweenCover";
+import { InBetweenStem } from "@/art/InBetweenStem";
+import { FragmentsCover } from "@/art/FragmentsCover";
+import { FragmentsArts } from "@/art/FragmentsArts";
+import { ResearchPage } from "@/art/ResearchPage";
+import { IB, FR } from "@/art/tokens";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <div className="t t-home">
+      <Nav current="/" />
+      <main id="main">
+        <section className="split" aria-labelledby="home-title">
+          <div className="half half-ib"><HeroIB /></div>
+          <div className="half half-fr"><HeroFR /></div>
+          <h1 id="home-title" className="split-title">
+            <span className="layer layer-a" aria-hidden="true"><span>LPCJH</span><span>Theme Studies</span></span>
+            <span className="layer layer-b"><span>LPCJH</span><span>Theme Studies</span></span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <p className="split-sub">Two editorial directions for the next issue of the Las Positas College Journal of Honors.</p>
+          <div className="split-cta">
+            <Link className="cta cta-ib" href="/in-between">Open In Between</Link>
+            <Link className="cta cta-fr" href="/fragments">Open Fragments</Link>
+          </div>
+        </section>
+
+        <section className="home-sec" aria-labelledby="six">
+          <div className="home-head">
+            <h2 id="six">Six pages, two journals</h2>
+            <p>Each direction has a cover, a section divider and a research page. Select any page to see it at full size, or download it.</p>
+          </div>
+          <div className="home-rows">
+            <div className="home-row home-row-ib">
+              <h3>In Between</h3>
+              <div className="home-thumbs">
+                <PagePreview title="Cover" pdf="/downloads/in-between-cover.pdf" png="/downloads/in-between-cover.png"><InBetweenCover /></PagePreview>
+                <PagePreview title="STEM divider" pdf="/downloads/in-between-stem-divider.pdf" png="/downloads/in-between-stem-divider.png"><InBetweenStem /></PagePreview>
+                <PagePreview title="Research page" pdf="/downloads/in-between-research-page.pdf" png="/downloads/in-between-research-page.png"><ResearchPage theme="in-between" /></PagePreview>
+              </div>
+            </div>
+            <div className="home-row home-row-fr">
+              <h3>Fragments</h3>
+              <div className="home-thumbs">
+                <PagePreview title="Cover" pdf="/downloads/fragments-cover.pdf" png="/downloads/fragments-cover.png"><FragmentsCover /></PagePreview>
+                <PagePreview title="ARTS divider" pdf="/downloads/fragments-arts-divider.pdf" png="/downloads/fragments-arts-divider.png"><FragmentsArts /></PagePreview>
+                <PagePreview title="Research page" pdf="/downloads/fragments-research-page.pdf" png="/downloads/fragments-research-page.png"><ResearchPage theme="fragments" /></PagePreview>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="home-sec home-two" aria-label="The two directions in brief">
+          <article className="brief brief-ib">
+            <h2>In Between</h2>
+            <p className="brief-line">The spaces separating ideas are also where ideas meet.</p>
+            <div className="mini-pal" aria-hidden="true">{IB.map((s) => <span key={s.hex} style={{ background: s.hex, flexGrow: s.share }} />)}</div>
+            <p>Crossing planes, overlaps and a single coral point. Colour changes by degrees.</p>
+            <Link href="/in-between">See the In Between system</Link>
+          </article>
+          <article className="brief brief-fr">
+            <h2>Fragments</h2>
+            <p className="brief-line">Knowledge is assembled from pieces that rarely arrive together.</p>
+            <div className="mini-pal" aria-hidden="true">{FR.map((s) => <span key={s.hex} style={{ background: s.hex, flexGrow: s.share }} />)}</div>
+            <p>Strips, blocks and split circles on a 60 px grid. Colour is separated by hard edges.</p>
+            <Link href="/fragments">See the Fragments system</Link>
+          </article>
+        </section>
       </main>
+      <footer className="home-foot">
+        <span>Nikhilesh Suravarjjala. Theme research for the Las Positas College Journal of Honors.</span>
+        <Link href="/deliverables">All files</Link>
+      </footer>
     </div>
   );
 }

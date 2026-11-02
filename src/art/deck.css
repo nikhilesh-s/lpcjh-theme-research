@@ -1,0 +1,26 @@
+.slides { background: #fff; }
+.slide { position: relative; width: 1280px; height: 720px; overflow: hidden; box-sizing: border-box; page-break-after: always; break-after: page; padding: 48px 64px; font-family: var(--f-display); }
+.slide * { box-sizing: border-box; }
+.slide h1 { margin: 0; font-weight: 700; letter-spacing: -0.035em; line-height: 0.95; }
+.slide h2 { margin: 0 0 14px; font-weight: 600; font-size: 22px; letter-spacing: -0.01em; }
+.slide p { margin: 0 0 12px; font-family: var(--f-text); font-size: 17px; line-height: 26px; }
+.slide li { font-family: var(--f-text); font-size: 16px; line-height: 24px; margin-bottom: 8px; }
+.slide ul { margin: 0; padding-left: 18px; }
+.slide .m { font-family: var(--f-meta); font-size: 12px; letter-spacing: 0.06em; }
+.slide .foot { position: absolute; left: 64px; right: 64px; bottom: 28px; display: flex; justify-content: space-between; }
+.pg { position: relative; overflow: hidden; outline: 1px solid rgba(0,0,0,.28); flex: none; background: #fff; }
+.pg > div { position: absolute; left: 0; top: 0; width: 816px; height: 1056px; transform-origin: 0 0; }
+.s-ib { background: #25235c; color: #f3ede3; }
+.s-ib .pg { outline-color: rgba(243,237,227,.5); }
+.s-fr { background: #f5f0e5; color: #191919; }
+.s-neutral { background: #faf8f3; color: #1c1b22; }
+.callouts { display: grid; gap: 14px; }
+.callouts div { border-top: 1px solid currentColor; padding-top: 8px; }
+.callouts b { display: block; font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+.callouts span { font-family: var(--f-text); font-size: 14px; line-height: 20px; display: block; }
+.dist { display: flex; height: 26px; margin: 8px 0 6px; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th { text-align: left; font-family: var(--f-meta); font-weight: 500; font-size: 11px; letter-spacing: 0.06em; padding: 6px 12px 6px 0; border-bottom: 1px solid currentColor; }
+.tbl td { font-family: var(--f-text); font-size: 13px; line-height: 18px; padding: 7px 14px 7px 0; border-bottom: 1px solid rgba(0,0,0,.18); vertical-align: top; }
+.tbl td:first-child { font-family: var(--f-display); font-weight: 600; width: 150px; }
+.slide:last-child { break-after: auto; page-break-after: auto; }
