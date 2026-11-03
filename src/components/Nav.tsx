@@ -6,6 +6,7 @@ const items = [
   { href: "/fragments", label: "Fragments" },
   { href: "/systems", label: "Design Systems" },
   { href: "/deliverables", label: "Deliverables" },
+  { href: "/explanations", label: "Explanations" },
 ];
 
 export function Nav({ current }: { current: string }) {

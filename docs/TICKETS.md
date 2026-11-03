@@ -14,3 +14,7 @@ Open items from the Nov 3 revision pass (Elli's notes). Each is self-contained.
 | 8 | Art and print CSS still in px (see `docs/REM-NOTES.md`) | Needs the export script to pin root font size first. | agent |
 | 9 | IBM Plex Mono is still loaded for hex values and the type table on the site | Elli's note was about mono inside the artwork. Drop it if he wants no mono anywhere. | Elli |
 | 10 | Canvas submission window closed Nov 2, 9:00 AM PT | Nik says he is working with Elli on feedback. Re-export and Drive refresh happen after the next round of notes. | Nik |
+| 11 | Make the accents work better | Nik's note, Nov 3. Accents must be automation-friendly: flat placed elements, hard-coded symbols and numbers, no live inline SVG/CSS. Rework the Venn heading marker and the Fragments markers so they can be built as placed elements in Affinity. Case studies go on `/explanations`. | design agent, human in the loop |
+| 12 | Remove "Claude-isms" from site copy, deck, rationale and spec text | Nik's note, Nov 3. Look for stock phrasing, "not X, it's Y" lines, em dashes, tidy three-part lists. Run the humanizer skill, then read it by hand. | agent |
+| 13 | Affinity: read a master template through the Affinity MCP and build a CSS-friendly mock-up version | Nik's plan, Nov 3. New designs start from that version. Justified text does not need to match. | agent |
+| 14 | Nik writes the why, how and case-study text on `/explanations` himself | Placeholders marked "(write here)". | Nik |
