@@ -22,15 +22,15 @@ export const rationale = {
       "Fragments treats an issue as an assembly job. Few studies are complete on their own; each article contributes a piece, and the journal is where the pieces are put together. That fits a publication of student research from many fields.",
       "Everything sits on one grid: 12 columns, 60 pixels, even the pieces that look displaced. Colour separates rather than blends. Citrine marks discovery, Cobalt gives a cool counterweight, Vermilion interrupts, and Editorial Ink and Warm Paper hold the page.",
       "The cover cuts the title into FRAG and MENTS and slides the lower strips one column sideways. Block colours flip the ink of the letters as they cross, so the word is broken by the same blocks that build the page.",
-      "The ARTS divider spells the section across four blocks that step down the grid and overlap by one cell, tagged 01 to 04. It repeats the cover’s parts in a new arrangement.",
-      "Research pages carry the same vocabulary in smaller form: numbered section tags, square heading markers, modular figure labels, crop-mark corners, a colour strip and a page number set on an offset block. All accents sit outside the text measure, so body text stays at 10.5 pt in Source Serif 4.",
+      "The ARTS divider spells the section across four blocks that step down the grid and overlap by one cell. It repeats the cover’s parts in a new arrangement.",
+      "Research pages carry the same vocabulary in smaller form: square heading markers, modular figure labels, crop-mark corners, a colour strip and a page number set on an offset block. All accents sit outside the text measure, so body text stays at 10.5 pt in Sabon.",
     ],
   },
 } as const;
 
 export const shared = [
   "Both themes keep the Las Positas College / Journal of Honors masthead in a light serif, as on the Spring 2026 cover, and the same folio format (page number, bar, journal name) and running header as the existing research pages.",
-  "Both use US Letter pages (8.5 × 11 in), which is the size of the Spring 2026 issue, and one type system: Space Grotesk for display, Source Serif 4 for article text, IBM Plex Mono for captions and metadata. Only colour, geometry and accents change, so an issue could adopt either theme without reworking its reading experience.",
+  "Both use US Letter pages (8.5 × 11 in), which is the size of the Spring 2026 issue, and one type system: Sabon throughout, in bold for titles and subheadings, regular for article text and italic for captions. Only colour, geometry and accents change, so an issue could adopt either theme without reworking its reading experience.",
 ];
 
 export function SpecPage({ theme }: { theme: Theme }) {
@@ -39,11 +39,7 @@ export function SpecPage({ theme }: { theme: Theme }) {
   const r = rationale[theme];
   return (
     <div className={`doc ${fr ? "doc-fr" : "doc-ib"}`}>
-      <div className="meta" style={{ display: "flex", justifyContent: "space-between" }}>
-        <span>LPCJH Theme Research — Palette and Typography</span>
-        <span>Theme study {fr ? "B" : "A"}</span>
-      </div>
-      <h1 style={{ fontSize: 84, marginTop: 22, color: fr ? "#171716" : "#28255F" }}>{r.name}</h1>
+      <h1 style={{ fontSize: 84, color: fr ? "#171716" : "#28255F" }}>{r.name}</h1>
       <p style={{ marginTop: 14, fontStyle: "italic", fontSize: 17, lineHeight: "24px", maxWidth: 560 }}>{r.line}</p>
 
       <div className="sw-row">
@@ -94,7 +90,7 @@ export function SpecPage({ theme }: { theme: Theme }) {
         <div style={{ display: "flex", alignItems: "baseline", gap: 28 }}>
           <span style={{ fontFamily: "var(--f-display)", fontWeight: 700, fontSize: 96, lineHeight: 0.9, letterSpacing: "-0.04em" }}>Aa</span>
           <span style={{ fontFamily: "var(--f-text)", fontSize: 14, lineHeight: "21px", maxWidth: 360 }}>
-            Source Serif 4 sets long-form article text at 10.5 pt. Space Grotesk carries titles and subheadings. <span style={{ fontFamily: "var(--f-meta)", fontSize: 12 }}>IBM Plex Mono: figures, captions, folio.</span>
+            Sabon Regular sets long-form article text at 10.5 pt. Sabon Bold carries titles and subheadings. Sabon Italic sets captions.
           </span>
         </div>
       </div>
@@ -106,10 +102,6 @@ export function RationalePage({ page }: { page: 1 | 2 }) {
   const items = page === 1 ? (["in-between"] as const) : (["fragments"] as const);
   return (
     <div className="doc doc-ib" style={{ background: "#F2EDE8" }}>
-      <div className="meta" style={{ display: "flex", justifyContent: "space-between", marginBottom: 20 }}>
-        <span>LPCJH — Theme Research — Design Rationale</span>
-        <span>{page} / 2</span>
-      </div>
       {items.map((t) => (
         <div key={t}>
           <h1 style={{ fontSize: 60, color: t === "fragments" ? "#171716" : "#28255F" }}>{rationale[t].name}</h1>

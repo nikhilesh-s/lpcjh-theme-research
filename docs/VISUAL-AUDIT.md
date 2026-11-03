@@ -19,7 +19,7 @@ Source: `LPCJH_Vol1_Issue1_DigitalEdition.pdf` (Drive file 1bJ1BAoh2jFQ1gErBGQUt
 
 ## Not verified
 - Whether the next issue is Vol. 1 Issue 2 or Vol. 2 Issue 1. The mockups say "Next issue" rather than guess.
-- Whether Atkinson Hyperlegible is a mandatory accessibility choice. The proposals use the brief's Source Serif 4 and note the swap.
+- Whether Atkinson Hyperlegible is a mandatory accessibility choice. The proposals set text in Sabon (school licence) and note the swap.
 
 ## Carried into both themes
 Masthead wording and light-serif treatment, header and folio format, US Letter, two-column article measure.

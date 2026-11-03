@@ -73,20 +73,8 @@ export function InBetweenCover() {
       <Masked uid="ibc-title" regions={ibRegions}>
         {(ink) => (
           <g fill={ink} fontFamily="var(--f-display)" fontWeight={700}>
-            <text x={30} y={372} fontSize={372} letterSpacing={-6}>IN</text>
-            <text x={44} y={812} fontSize={166} letterSpacing={-2}>BETWEEN</text>
-          </g>
-        )}
-      </Masked>
-
-      {/* metadata on the planes */}
-      <Masked uid="ibc-meta" regions={ibRegions}>
-        {(ink) => (
-          <g fill={ink} fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>
-            <text x={48} y={52}>LPCJH THEME STUDY A</text>
-            <text x={W - 48} y={52} textAnchor="end">01 / 02</text>
-            <text x={48} y={YB - 20}>x 00</text>
-            <text x={W - 48} y={YB - 20} textAnchor="end">y 00</text>
+            <text x={30} y={328} fontSize={340} letterSpacing={-6}>IN</text>
+            <text x={48} y={812} fontSize={144} letterSpacing={-2}>BETWEEN</text>
           </g>
         )}
       </Masked>
@@ -95,9 +83,6 @@ export function InBetweenCover() {
       <g fill={C.indigo}>
         <text x={48} y={978} fontFamily="var(--f-text)" fontWeight={300} fontSize={46} letterSpacing={-0.5}>Las Positas College</text>
         <text x={48} y={1014} fontFamily="var(--f-text)" fontWeight={300} fontSize={22}>Journal of Honors <tspan opacity={0.5}>|</tspan> Next issue</text>
-        <text x={W - 48} y={978} textAnchor="end" fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>IN BETWEEN</text>
-        <text x={W - 48} y={996} textAnchor="end" fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} opacity={0.7}>The spaces separating ideas</text>
-        <text x={W - 48} y={1012} textAnchor="end" fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} opacity={0.7}>are also where ideas meet.</text>
       </g>
     </svg>
   );

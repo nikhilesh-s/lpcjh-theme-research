@@ -14,9 +14,10 @@
   --fr-cobalt: var(--p0-blue-600);
   --fr-paper: var(--p0-orange-25);
 
-  --f-display: var(--font-grotesk), "Helvetica Neue", Arial, sans-serif;
-  --f-text: var(--font-serif), Georgia, serif;
-  --f-meta: var(--font-mono), ui-monospace, Menlo, monospace;
+  --f-display: var(--font-sabon), "Palatino Linotype", Palatino, Georgia, serif;
+  --f-text: var(--f-display);
+  --f-meta: var(--f-display);
+  --f-code: var(--font-code), ui-monospace, Menlo, monospace;
 }
 
 @theme inline {

@@ -24,7 +24,6 @@ export function PaletteStrip({ swatches, label }: { swatches: Swatch[]; label: s
             <span>{s.role}</span>
             <span className="pal-mono">{s.hex} · RGB {rgb(s.hex)}</span>
             <span className="pal-mono">palette-0 {s.step}</span>
-            <span className="pal-mono">about {s.share}% of cover and divider</span>
             <button type="button" className="pal-copy" onClick={() => copy(s.hex)}>{copied === s.hex ? "Copied" : "Copy HEX"}</button>
           </div>
         </div>

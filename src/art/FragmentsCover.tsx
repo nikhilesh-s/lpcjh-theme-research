@@ -21,7 +21,7 @@ export function FragmentsCover() {
   const Title = ({ ink }: { ink: string }) => (
     <g fill={ink} fontFamily="var(--f-display)" fontWeight={700}>
       <Strips uid={`frc-f-${ink.slice(1)}`} strips={FRAG_STRIPS}>
-        <text x={gx(0) - 14} y={gy(6)} fontSize={257} letterSpacing={30}>FRAG</text>
+        <text x={gx(0) - 6} y={gy(6)} fontSize={230} letterSpacing={24}>FRAG</text>
       </Strips>
       <Strips uid={`frc-m-${ink.slice(1)}`} strips={MENTS_STRIPS}>
         <text x={gx(0) + 6} y={gy(9) + 30} fontSize={200} letterSpacing={0}>MENTS</text>
@@ -37,18 +37,6 @@ export function FragmentsCover() {
       <rect x={0} y={gy(12)} width={W} height={H - gy(12)} fill={F.ink} />
 
       <BlockLayers uid="frc" blocks={blocks} art={(ink) => <Title ink={ink} />} />
-
-      {/* numbered fragments */}
-      <g fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>
-        <text x={gx(0) + 8} y={gy(2) + 20} fill="#F7EDDD">01</text>
-        <text x={gx(8) + 8} y={gy(3) + 20} fill={F.ink}>02</text>
-        <text x={gx(0) + 8} y={gy(7) - 10} fill={F.ink}>03</text>
-        <text x={gx(4) + 8} y={gy(8) + 50} fill={F.paper}>04</text>
-        <text x={gx(0)} y={gy(0) + 6} fill={F.ink}>LPCJH THEME STUDY B</text>
-        <text x={W - GX_R} y={gy(0) + 6} fill={F.ink} textAnchor="end">02 / 02</text>
-        <text x={gx(0)} y={gy(11) + 20} fill={F.ink}>Knowledge is assembled from pieces</text>
-        <text x={gx(0)} y={gy(11) + 36} fill={F.ink}>that rarely arrive together.</text>
-      </g>
 
       {/* assembled panel: cells on the 60px grid, 120px each (right column 168 to bleed) */}
       <g>
@@ -73,8 +61,6 @@ export function FragmentsCover() {
         <text x={gx(0)} y={gy(13) + 40} fontFamily="var(--f-text)" fontWeight={300} fontSize={20}>Journal of Honors <tspan opacity={0.5}>|</tspan> Next issue</text>
       </g>
       <rect x={gx(0)} y={gy(14) + 30} width={U} height={6} fill={F.citrine} />
-      <text x={gx(0)} y={gy(15) + 6} fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} fill={F.paper}>FRAGMENTS</text>
     </svg>
   );
 }
-const GX_R = 48;

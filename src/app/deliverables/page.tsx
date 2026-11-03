@@ -9,7 +9,6 @@ export default function Deliverables() {
       <Nav current="/deliverables" />
       <main id="main">
         <header className="sys-head">
-          <p className="kicker">Deliverables</p>
           <h1>Files</h1>
           <p className="lede">Pages are US Letter (8.5 × 11 in). PNGs are 2550 × 3300 px, 300 dpi. PDFs keep type and artwork as vectors.</p>
         </header>

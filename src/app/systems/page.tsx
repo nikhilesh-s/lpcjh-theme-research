@@ -28,7 +28,6 @@ export default function Systems() {
       <Nav current="/systems" />
       <main id="main">
         <header className="sys-head">
-          <p className="kicker">Design systems</p>
           <h1>Same journal, two systems</h1>
           <p className="lede">Both share a page size, a type system and a masthead. Everything else changes: colour logic, geometry, and what the page does at its edges.</p>
         </header>
@@ -49,8 +48,8 @@ export default function Systems() {
 
           <section className="cmp-row" aria-labelledby="c-type">
             <h2 id="c-type">Typography</h2>
-            <div className="cmp-cell cmp-ib"><h3>In Between</h3><p>Space Grotesk cut by planes: ink flips where the colour under a letter changes. IN is 279 pt, BETWEEN 125 pt.</p></div>
-            <div className="cmp-cell cmp-fr"><h3>Fragments</h3><p>The same face cut into strips and shifted by whole grid steps. FRAG is 193 pt, MENTS 150 pt. Article text is identical in both.</p></div>
+            <div className="cmp-cell cmp-ib"><h3>In Between</h3><p>Sabon Bold cut by planes: ink flips where the colour under a letter changes. IN is 255 pt, BETWEEN 108 pt.</p></div>
+            <div className="cmp-cell cmp-fr"><h3>Fragments</h3><p>The same face cut into strips and shifted by whole grid steps. FRAG is 173 pt, MENTS 150 pt. Article text is identical in both.</p></div>
           </section>
 
           <section className="cmp-row" aria-labelledby="c-cov">
@@ -68,7 +67,7 @@ export default function Systems() {
           <section className="cmp-row" aria-labelledby="c-res">
             <h2 id="c-res">Research-page accents</h2>
             <div className="cmp-cell cmp-ib"><PagePreview title="In Between research page" pdf="/downloads/in-between-research-page.pdf" png="/downloads/in-between-research-page.png"><ResearchPage theme="in-between" /></PagePreview><p>Overlapping-circle markers, dual-tone rule, outlined capsules, margin connector, gradient edge.</p></div>
-            <div className="cmp-cell cmp-fr"><PagePreview title="Fragments research page" pdf="/downloads/fragments-research-page.pdf" png="/downloads/fragments-research-page.png"><ResearchPage theme="fragments" /></PagePreview><p>Numbered tags, square markers, modular figure labels, crop marks, offset folio.</p></div>
+            <div className="cmp-cell cmp-fr"><PagePreview title="Fragments research page" pdf="/downloads/fragments-research-page.pdf" png="/downloads/fragments-research-page.png"><ResearchPage theme="fragments" /></PagePreview><p>Square markers, modular figure labels, crop marks, offset folio.</p></div>
           </section>
 
           <section className="cmp-row" aria-labelledby="c-flex">

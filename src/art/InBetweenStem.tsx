@@ -71,15 +71,13 @@ export function InBetweenStem() {
       </g>
 
       {/* labels under each circle */}
-      <g fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} fill={C.ivory}>
+      <g fontFamily="var(--f-text)" fontStyle="italic" fontSize={16} fill={C.ivory}>
         {cx.map((x, i) => (
           <g key={i}>
             <line x1={x} y1={CY + R + 8} x2={x} y2={CY + R + 52} stroke={C.lavender} strokeWidth={1} />
             <text x={x + 8} y={CY + R + 50}>{names[i]}</text>
           </g>
         ))}
-        <text x={48} y={52}>SECTION DIVIDER</text>
-        <text x={W - 48} y={52} textAnchor="end">LPCJH THEME STUDY A</text>
       </g>
 
       {/* the line */}
@@ -91,10 +89,6 @@ export function InBetweenStem() {
         inquiry and discovery.
       </text>
 
-      <g fill={C.lavender} fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>
-        <text x={48} y={H - 48}>Las Positas College Journal of Honors</text>
-        <text x={W - 48} y={H - 48} textAnchor="end">In Between</text>
-      </g>
     </svg>
   );
 }

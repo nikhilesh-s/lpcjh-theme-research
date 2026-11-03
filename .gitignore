@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 exports/
+
+# licensed font (school licence): do not redistribute
+src/fonts/

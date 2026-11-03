@@ -102,10 +102,6 @@ function PlateFR() {
         <rect x="94" y="114" width="82" height="62" fill="#DCBF4A" />
         <rect x="182" y="114" width="150" height="62" fill="none" stroke="#171716" />
       </g>
-      <g fontFamily="var(--f-meta)" fontSize="9.5">
-        <text x="18" y="28" fill="#F7EDDD">01</text><text x="188" y="28" fill="#171716">02</text>
-        <text x="270" y="28" fill="#F7EDDD">03</text><text x="18" y="130" fill="#F7EDDD">04</text>
-      </g>
     </svg>
   );
 }
@@ -146,9 +142,6 @@ function DecoFR() {
       <g>
         <rect x="64" y="12" width="8" height="8" fill="#DCBF4A" /><rect x="74" y="12" width="8" height="8" fill="#305EB1" /><rect x="84" y="12" width="8" height="8" fill="#E15C49" />
       </g>
-      <g fontFamily="var(--f-meta)" fontSize="9" fill="#171716" opacity="0.7">
-        {[1, 2, 3, 4, 5, 6].map((n) => <text key={n} x="30" y={80 + n * 140} transform={`rotate(-90 30 ${80 + n * 140})`}>{String(n).padStart(2, "0")}</text>)}
-      </g>
       <rect x="772" y="78" width="20" height="6" fill="#E15C49" />
       <rect x="772" y="86" width="20" height="2" fill="#171716" />
     </svg>
@@ -162,19 +155,12 @@ export function ResearchPage({ theme }: { theme: Theme }) {
     <div className={`rp ${fr ? "rp-fr" : "rp-ib"}`}>
       {fr ? <DecoFR /> : <DecoIB />}
       <div className="rp-run">
-        <span className="m">Next issue | Sample page</span>
+        <span className="m">{c.section}</span>
         <em>{c.running}</em>
       </div>
       <div className="rp-main">
-        <div className="rp-sec">
-          {fr ? (
-            <><span className="num">03</span><span className="lab">{c.section}</span></>
-          ) : (
-            <span>{c.section}</span>
-          )}
-        </div>
         <h1 className="rp-title">{c.title}</h1>
-        <div className="rp-by"><b>Illustrative Author</b><i>Las Positas College</i><span className="tag">layout copy only</span></div>
+        <div className="rp-by"><b>Illustrative Author</b><i>Las Positas College</i></div>
         <section className="rp-abs">
           <h2>{fr ? <><span className="n">A</span><span>Abstract</span></> : "Abstract"}</h2>
           <p>{c.abstract}</p>
@@ -199,7 +185,7 @@ export function ResearchPage({ theme }: { theme: Theme }) {
       <div className="rp-notes">{c.notes.map((n) => <div key={n}>{n}</div>)}</div>
       <div className="rp-foot">
         {fr ? <span className="folio-box">{c.folio}</span> : <span className="folio">{c.folio} | Las Positas College Journal of Honors</span>}
-        {fr ? <span className="folio">Las Positas College Journal of Honors</span> : <span className="folio">Theme study A</span>}
+        {fr ? <span className="folio">Las Positas College Journal of Honors</span> : null}
       </div>
     </div>
   );

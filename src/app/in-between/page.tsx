@@ -23,7 +23,6 @@ export default function InBetween() {
         <header className="ib-hero">
           <HeroIB className="ib-hero-art" />
           <div className="ib-hero-text">
-            <p className="kicker">Theme A</p>
             <h1>In Between</h1>
             <p className="lede">{r.line}</p>
             <nav aria-label="On this page" className="jump">
@@ -42,7 +41,6 @@ export default function InBetween() {
 
         <section id="colour" className="ib-sec ib-light" aria-labelledby="h-col">
           <h2 id="h-col">Colour is transition</h2>
-          <p className="sec-lede">Hover or focus a swatch. Cool analogous violets carry the structure; coral is the one warm point, used once per page.</p>
           <PaletteStrip swatches={IB} label="In Between palette" />
           <p className="note">Ivory on lavender measures 2.2:1, so that pairing is decorative only. Indigo on lavender is 5.5:1 and indigo on coral 4.9:1.</p>
         </section>
@@ -54,7 +52,6 @@ export default function InBetween() {
 
         <section id="pages" className="ib-sec ib-iris" aria-labelledby="h-pages">
           <h2 id="h-pages">Divider and research page</h2>
-          <p className="sec-lede">The STEM divider reuses the cover’s clip-and-re-ink method. The research page stays scholarly: every accent sits in the margins or beside a heading.</p>
           <div className="pages-pair">
             <PagePreview title="STEM divider" pdf="/downloads/in-between-stem-divider.pdf" png="/downloads/in-between-stem-divider.png"><InBetweenStem /></PagePreview>
             <PagePreview title="Research page" pdf="/downloads/in-between-research-page.pdf" png="/downloads/in-between-research-page.png"><ResearchPage theme="in-between" /></PagePreview>

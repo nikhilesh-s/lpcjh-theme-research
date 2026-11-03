@@ -49,7 +49,6 @@ export function Deck() {
 
       {/* 2 */}
       <section className="slide s-neutral">
-        <div className="m">Reference audit · Spring 2026, Vol. 1, Issue 1</div>
         <h1 style={{ fontSize: 46, marginTop: 14, maxWidth: 760 }}>What the first issue already establishes</h1>
         <div style={{ display: "flex", gap: 16, marginTop: 26 }}>
           {["cover", "toc", "research"].map((n) => (
@@ -78,7 +77,6 @@ export function Deck() {
 
       {/* 3 IB concept */}
       <section className="slide s-ib">
-        <div className="m" style={{ opacity: 0.8 }}>Theme A</div>
         <h1 style={{ fontSize: 120, marginTop: 10 }}>In Between</h1>
         <p style={{ fontStyle: "italic", fontSize: 22, marginTop: 14, maxWidth: 700 }}>The spaces separating ideas are also where ideas meet.</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40, marginTop: 28 }}>
@@ -97,7 +95,6 @@ export function Deck() {
 
       {/* 4 IB cover */}
       <section className="slide s-ib">
-        <div className="m" style={{ opacity: 0.8 }}>In Between · Cover</div>
         <div style={{ position: "absolute", left: 64, top: 48 + 28 }}><Pg h={600}><InBetweenCover /></Pg></div>
         <div style={{ position: "absolute", left: 560, top: 76, width: 640 }}>
           <h1 style={{ fontSize: 52 }}>Two planes cross. Where they overlap, the work is shared.</h1>
@@ -113,7 +110,6 @@ export function Deck() {
 
       {/* 5 IB divider + research */}
       <section className="slide s-ib">
-        <div className="m" style={{ opacity: 0.8 }}>In Between · STEM divider and research page</div>
         <div style={{ position: "absolute", left: 64, top: 76, display: "flex", gap: 24 }}>
           <Pg h={540}><InBetweenStem /></Pg>
           <Pg h={540}><ResearchPage theme="in-between" /></Pg>
@@ -129,7 +125,6 @@ export function Deck() {
 
       {/* 6 FR concept */}
       <section className="slide s-fr">
-        <div className="m">Theme B</div>
         <h1 style={{ fontSize: 120, marginTop: 10 }}>Fragments</h1>
         <p style={{ fontStyle: "italic", fontSize: 22, marginTop: 14, maxWidth: 700 }}>Knowledge is assembled from pieces that rarely arrive together.</p>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40, marginTop: 28 }}>
@@ -148,14 +143,13 @@ export function Deck() {
 
       {/* 7 FR cover */}
       <section className="slide s-fr">
-        <div className="m">Fragments · Cover</div>
         <div style={{ position: "absolute", left: 64, top: 76 }}><Pg h={600}><FragmentsCover /></Pg></div>
         <div style={{ position: "absolute", left: 560, top: 76, width: 640 }}>
           <h1 style={{ fontSize: 52 }}>One word, cut into strips and put back one column off.</h1>
           <div className="callouts" style={{ marginTop: 32, gridTemplateColumns: "1fr 1fr", gap: 22 }}>
             <div><b>12 × 16 grid</b><span>Every block and every displacement lands on a 60 px module, or half of one.</span></div>
             <div><b>Colour blocks flip ink</b><span>Letters turn paper or ink as they cross cobalt, citrine, vermilion and ink fields.</span></div>
-            <div><b>Numbered fragments</b><span>01 to 04 label the blocks; the panel at lower right shows the parts assembled.</span></div>
+            <div><b>Assembled panel</b><span>The panel at lower right shows the cut parts put back together.</span></div>
             <div><b>Masthead</b><span>Same light serif lockup, set paper-on-ink at the base.</span></div>
           </div>
         </div>
@@ -164,14 +158,13 @@ export function Deck() {
 
       {/* 8 FR divider + research */}
       <section className="slide s-fr">
-        <div className="m">Fragments · ARTS divider and research page</div>
         <div style={{ position: "absolute", left: 64, top: 76, display: "flex", gap: 24 }}>
           <Pg h={540}><FragmentsArts /></Pg>
           <Pg h={540}><ResearchPage theme="fragments" /></Pg>
         </div>
         <div style={{ position: "absolute", left: 958, top: 76, width: 258 }} className="callouts">
           <div><b>Divider</b><span>A, R, T and S step down the grid in four blocks, each overlapping the last by one cell.</span></div>
-          <div><b>Tags and labels</b><span>Numbered section tag, square heading markers, “FIG” label with a colour chip.</span></div>
+          <div><b>Tags and labels</b><span>Square heading markers, “FIG” label with a colour chip.</span></div>
           <div><b>Margin details</b><span>Crop marks, a colour strip and a folio on an offset block. All outside the text.</span></div>
         </div>
         <Foot n={8} label="Fragments" />
@@ -179,7 +172,6 @@ export function Deck() {
 
       {/* 9 compare */}
       <section className="slide s-neutral">
-        <div className="m">Comparison</div>
         <h1 style={{ fontSize: 44, marginTop: 10 }}>Same journal, two systems</h1>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(6, auto)", gap: 10, marginTop: 22, justifyContent: "start" }}>
           <Pg h={248}><InBetweenCover /></Pg><Pg h={248}><InBetweenStem /></Pg><Pg h={248}><ResearchPage theme="in-between" /></Pg>
@@ -198,7 +190,6 @@ export function Deck() {
 
       {/* 10 implementation */}
       <section className="slide s-neutral">
-        <div className="m">Implementation</div>
         <h1 style={{ fontSize: 44, marginTop: 10 }}>Flexibility, accessibility, production</h1>
         <table className="tbl" style={{ marginTop: 24 }}>
           <thead><tr><th></th><th>In Between</th><th>Fragments</th></tr></thead>
@@ -206,7 +197,7 @@ export function Deck() {
             <tr><td>Editorial flexibility</td><td>Dividers for the other sections reuse the circle-and-intersection method with different letter sets. Tone stays calm, which suits longer reading.</td><td>Any word breaks into strips or blocks. Higher energy; a long title needs more care to stay legible.</td></tr>
             <tr><td>Visual accessibility</td><td>Body text 13.9:1 on ivory. Ivory on lavender is 2.2:1, so that pairing is decorative only; indigo on lavender is 5.5:1.</td><td>Body 15.5:1 on paper. Paper on cobalt is 5.4:1 and ink on vermilion 5.0:1; paper on vermilion (3.1:1) is for display type only.</td></tr>
             <tr><td>Production</td><td>All vector. One gradient and a few transparencies; both export cleanly to PDF.</td><td>All vector, flat fills only. The grid is easy to rebuild in InDesign or Affinity.</td></tr>
-            <tr><td>Type</td><td colSpan={2}>Shared: Space Grotesk, Source Serif 4, IBM Plex Mono (all open licence). The Spring 2026 issue sets body text in Atkinson Hyperlegible Next; swapping it back is a one-token change if readability policy requires it.</td></tr>
+            <tr><td>Type</td><td colSpan={2}>Shared: Sabon (school licence), in Bold, Regular and Italic. The Spring 2026 issue sets body text in Atkinson Hyperlegible Next; swapping it back is a one-token change if readability policy requires it.</td></tr>
           </tbody>
         </table>
         <Foot n={10} label="Implementation" />

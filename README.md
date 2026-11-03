@@ -19,3 +19,7 @@ BASE=http://localhost:3100 node scripts/export.mjs   # regenerate downloads
 `scripts/export.mjs` expects a Playwright Chromium; edit `exe` at the top if yours lives elsewhere.
 
 Placeholder article text on the research pages is invented for layout and labelled as such.
+
+## Fonts
+
+Sabon is licensed to the school and is not in this repo. Put `Sabon-Regular.woff2`, `Sabon-Italic.woff2`, `Sabon-Bold.woff2` and `Sabon-BoldItalic.woff2` in `src/fonts/` before building (`.gitignore` excludes the folder). IBM Plex Mono (hex values only) loads through next/font/google.

@@ -5,11 +5,11 @@ export function TypeShowcase({ theme }: { theme: "in-between" | "fragments" }) {
     <div className="type-grid">
       <div className="type-specimen">
         <div className="type-aa" aria-hidden="true">Aa</div>
-        <p className="type-face">Space Grotesk Bold and SemiBold</p>
+        <p className="type-face">Sabon Bold</p>
         <p className="type-line type-display">Titles, dividers, subheadings</p>
-        <p className="type-face">Source Serif 4</p>
+        <p className="type-face">Sabon Regular</p>
         <p className="type-line type-text">Long-form article text is set at 10.5 pt on 15.75 pt leading, near 55 characters to the line in a two-column measure.</p>
-        <p className="type-face">IBM Plex Mono</p>
+        <p className="type-face">Sabon Italic</p>
         <p className="type-line type-meta">Figure 1. Captions, metadata, folio.</p>
       </div>
       <table className="type-table">
@@ -40,7 +40,6 @@ export function AccentsIB() {
 export function AccentsFR() {
   return (
     <ul className="acc">
-      <li><span className="acc-demo"><span className="fr-tag"><i>03</i><b>Arts &amp; Humanities</b></span></span><span>Numbered section tag: ink number, citrine label.</span></li>
       <li><span className="acc-demo"><span className="fr-hm">1</span><b>Introduction</b></span><span>Square heading marker in cobalt, numbered to the section.</span></li>
       <li><span className="acc-demo"><span className="fr-fig"><i>FIG 1</i><s /></span></span><span>Modular figure label with a citrine chip.</span></li>
       <li><span className="acc-demo"><svg width="64" height="40" viewBox="0 0 64 40" aria-hidden="true"><path d="M2 14V2H14M50 2H62V14M62 26V38H50M14 38H2V26" fill="none" stroke="#171716" /></svg></span><span>Crop marks at the corners, outside the live area.</span></li>

@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import "./palette-0.css";
 import "./site.css";
 
-const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"], display: "swap" });
-const serif = Source_Serif_4({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
+// Sabon is licensed to the school: the woff2 files live in src/fonts and are not committed (see README).
+const sabon = localFont({
+  variable: "--font-sabon",
   display: "swap",
+  src: [
+    { path: "../fonts/Sabon-Regular.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/Sabon-Italic.woff2", weight: "400", style: "italic" },
+    { path: "../fonts/Sabon-Bold.woff2", weight: "700", style: "normal" },
+    { path: "../fonts/Sabon-BoldItalic.woff2", weight: "700", style: "italic" },
+  ],
 });
-const mono = IBM_Plex_Mono({
-  variable: "--font-mono",
+const code = IBM_Plex_Mono({
+  variable: "--font-code",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -27,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${grotesk.variable} ${serif.variable} ${mono.variable}`}>
+    <html lang="en" className={`${sabon.variable} ${code.variable}`}>
       <body>
         <a href="#main" className="skip">Skip to content</a>
         {children}

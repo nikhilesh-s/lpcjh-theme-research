@@ -3,10 +3,10 @@ import { W, H } from "./regions";
 
 // Four 4x4-cell blocks step down the grid, each overlapping the last by one cell.
 const cells = [
-  { l: "A", c: 0, r: 2, fill: F.ink, ink: F.paper, n: "01", dx: -22 },
-  { l: "R", c: 3, r: 4, fill: F.citrine, ink: F.ink, n: "02", dx: -14 },
-  { l: "T", c: 6, r: 6, fill: F.cobalt, ink: F.paper, n: "03", dx: 18 },
-  { l: "S", c: 9, r: 8, fill: F.vermilion, ink: F.ink, n: "04", dx: 18 },
+  { l: "A", c: 0, r: 2, fill: F.ink, ink: F.paper, dx: -22 },
+  { l: "R", c: 3, r: 4, fill: F.citrine, ink: F.ink, dx: -14 },
+  { l: "T", c: 6, r: 6, fill: F.cobalt, ink: F.paper, dx: 18 },
+  { l: "S", c: 9, r: 8, fill: F.vermilion, ink: F.ink, dx: 18 },
 ];
 
 export function FragmentsArts() {
@@ -28,7 +28,6 @@ export function FragmentsArts() {
           <g key={c.l}>
             <rect x={x} y={y} width={w} height={h} fill={c.fill} />
             <text x={x + w / 2 + c.dx} y={y + h / 2 + 91} textAnchor="middle" fontFamily="var(--f-display)" fontWeight={700} fontSize={260} fill={c.ink}>{c.l}</text>
-            <text x={x + 10} y={y + 20} fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} fill={c.ink}>{c.n}</text>
           </g>
         );
       })}
@@ -46,14 +45,8 @@ export function FragmentsArts() {
       <g fill={F.paper}>
         <text x={gx(0)} y={gy(13) + 20} fontFamily="var(--f-display)" fontWeight={600} fontSize={44} letterSpacing={-0.8}>& Humanities</text>
         <text x={gx(0)} y={gy(13) + 56} fontFamily="var(--f-text)" fontStyle="italic" fontWeight={300} fontSize={22}>Pieces made, then put together.</text>
-        <text x={gx(0)} y={gy(15) + 6} fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>Las Positas College Journal of Honors</text>
-        <text x={W - 48} y={gy(15) + 6} textAnchor="end" fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2}>Fragments</text>
       </g>
       <rect x={gx(0)} y={gy(12)} width={U} height={6} fill={F.citrine} />
-      <g fontFamily="var(--f-meta)" fontSize={11} letterSpacing={1.2} fill={F.ink}>
-        <text x={gx(0)} y={gy(0) + 6}>SECTION DIVIDER</text>
-        <text x={gx(0)} y={gy(0) + 24}>03 / ARTS</text>
-      </g>
     </svg>
   );
 }

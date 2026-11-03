@@ -31,7 +31,7 @@ export default function Home() {
         <section className="home-sec" aria-labelledby="six">
           <div className="home-head">
             <h2 id="six">Six pages, two journals</h2>
-            <p>Each direction has a cover, a section divider and a research page. Select any page to see it at full size, or download it.</p>
+            <p>Each direction has a cover, a section divider and a research page.</p>
           </div>
           <div className="home-rows">
             <div className="home-row home-row-ib">
